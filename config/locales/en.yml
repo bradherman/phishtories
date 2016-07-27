@@ -20,4 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  stories:
+    create:
+      alert: "You'll never tell me this story of the ghost... There was an error saving."

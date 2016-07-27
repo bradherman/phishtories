@@ -3,15 +3,17 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 5.0.0'
 # gem 'administrate', github: 'lyonsv/administrate', branch: 'rails-5'
+gem 'attribute_normalizer'
+gem 'email_validator'
+gem 'hamlit', require: true
+gem 'jbuilder', '~> 2.5'
+gem 'jquery-rails'
+gem 'coffee-rails', '~> 4.2'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
-gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
-gem 'email_validator'
+gem 'uglifier', '>= 1.3.0'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -24,6 +26,8 @@ end
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'factory_girl_rails'
+  gem 'pry-rails'
   gem 'rspec-rails', '~> 3.5'
 end
 
