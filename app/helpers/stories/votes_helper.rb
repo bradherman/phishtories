@@ -1,0 +1,2 @@
+module Stories::VotesHelper
+end
