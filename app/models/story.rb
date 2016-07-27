@@ -5,7 +5,8 @@ class Story < ApplicationRecord
 
   normalize_attributes :author, :location, :venue, :author_location, :date, :period
 
-  belongs_to :user
+  belongs_to :user, counter_cache: true
 
   has_many :comments
+  has_many :votes, as: :voteable
 end

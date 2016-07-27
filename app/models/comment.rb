@@ -3,8 +3,9 @@ class Comment < ApplicationRecord
   validates_associated :user, :story, :parent
 
   has_many :children, class_name: 'Comment', foreign_key: 'parent_id'
+  has_many :votes, as: :voteable
 
-  belongs_to :user
-  belongs_to :story
-  belongs_to :parent, class_name: 'Comment', foreign_key: 'parent_id'
+  belongs_to :user, counter_cache: true
+  belongs_to :story, counter_cache: true
+  belongs_to :parent, class_name: 'Comment', foreign_key: 'parent_id', counter_cache: true
 end

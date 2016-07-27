@@ -15,4 +15,8 @@ RSpec.describe Vote, type: :model do
     it { is_expected.to validate_presence_of(:voteable_id) }
     it { is_expected.to validate_presence_of(:voteable_type) }
   end
+
+  context 'assocations' do
+    it { is_expected.to belong_to(:voteable) }
+  end
 end
