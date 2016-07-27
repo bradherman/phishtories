@@ -15,4 +15,16 @@ RSpec.describe Story, type: :model do
   it { is_expected.to have_db_column(:removed).of_type(:boolean).with_options(default: false) }
   it { is_expected.to have_db_column(:created_at).of_type(:datetime) }
   it { is_expected.to have_db_column(:updated_at).of_type(:datetime) }
+
+  context 'validations' do
+    it { is_expected.to validate_presence_of(:body) }
+    it { is_expected.to validate_length_of(:body).is_at_least(250) }
+    it { is_expected.to validate_presence_of(:title) }
+    it { is_expected.to validate_presence_of(:author) }
+    it { is_expected.to validate_presence_of(:author_email) }
+    it { is_expected.to validate_presence_of(:votes) }
+    it { is_expected.to validate_numericality_of(:votes).is_greater_than_or_equal_to(0) }
+    it { is_expected.to validate_presence_of(:flagged) }
+    it { is_expected.to validate_presence_of(:removed) }
+  end
 end
