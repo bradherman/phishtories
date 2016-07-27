@@ -17,6 +17,8 @@ RSpec.describe Story, type: :model do
     it { is_expected.to have_db_column(:removed).of_type(:boolean).with_options(default: false) }
     it { is_expected.to have_db_column(:created_at).of_type(:datetime) }
     it { is_expected.to have_db_column(:updated_at).of_type(:datetime) }
+
+    it { is_expected.to have_db_index(:user_id) }
   end
 
   context 'validations' do
