@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe StoriesController do
+describe StoriesController, type: :routing do
   specify { expect(get('/stories')).to        route_to('stories#index') }
   specify { expect(get('/stories/new')).to    route_to('stories#new') }
   specify { expect(post('/stories')).to       route_to('stories#create') }

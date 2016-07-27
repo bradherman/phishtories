@@ -23,6 +23,12 @@ class StoriesController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+  end
+
   private
 
   def story_params
