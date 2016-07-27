@@ -1,24 +1,13 @@
-# README
+# Phishtories
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Code Climate](https://codeclimate.com/github/bradherman/phishtories/badges/gpa.svg)](https://codeclimate.com/github/bradherman/phishtories)
 
-Things you may want to cover:
+Phishtories is a web app for the Phans to share their personal stories relating to the band and their music... This project is 100% open source and any proceeds will be donated to the Mockingbird Foundation.
 
-* Ruby version
+## Contributing
 
-* System dependencies
+If you'd like to contribute, feel free to fork the repo and submit any changes via pull request.  Please make sure you add specs and ensure that they are passing!  Also would be dope if you could ensure you're not negatively impacting the CodeClimate score.
 
-* Configuration
+If you have any ideas or notice any bugs and don't want to implement them yourself, feel free to submit an issue.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thanks phanners!
