@@ -6,4 +6,6 @@ class Story < ApplicationRecord
   normalize_attributes :author, :location, :venue, :author_location, :date, :period
 
   belongs_to :user
+
+  has_many :comments
 end
