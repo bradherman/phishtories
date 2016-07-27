@@ -12,7 +12,6 @@ RSpec.describe Story, type: :model do
     it { is_expected.to have_db_column(:location).of_type(:string) }
     it { is_expected.to have_db_column(:date).of_type(:date) }
     it { is_expected.to have_db_column(:period).of_type(:integer) }
-    it { is_expected.to have_db_column(:votes).of_type(:integer).with_options(default: 0) }
     it { is_expected.to have_db_column(:flagged).of_type(:boolean).with_options(default: false) }
     it { is_expected.to have_db_column(:removed).of_type(:boolean).with_options(default: false) }
     it { is_expected.to have_db_column(:created_at).of_type(:datetime) }
@@ -26,8 +25,6 @@ RSpec.describe Story, type: :model do
     it { is_expected.to validate_length_of(:body).is_at_least(250) }
     it { is_expected.to validate_presence_of(:title) }
     it { is_expected.to validate_presence_of(:author_email) }
-    it { is_expected.to validate_presence_of(:votes) }
-    it { is_expected.to validate_numericality_of(:votes).is_greater_than_or_equal_to(0) }
   end
 
   context 'normalizations' do
