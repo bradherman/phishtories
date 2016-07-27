@@ -1,0 +1,2 @@
+module Stories::FlagsHelper
+end
