@@ -16,6 +16,10 @@ RSpec.describe Comment, type: :model do
     it { is_expected.to have_db_index(:parent_id) }
   end
 
+  context 'normalizations' do
+    it { is_expected.to normalize_attribute(:body) }
+  end
+
   context 'validations' do
     it { is_expected.to validate_presence_of(:body) }
     it { is_expected.to validate_presence_of(:story_id) }

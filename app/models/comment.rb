@@ -6,6 +6,8 @@ class Comment < ApplicationRecord
   has_many :votes, as: :voteable
   has_many :flags, as: :flaggable
 
+  normalize_attributes :body
+
   belongs_to :user,   counter_cache: true
   belongs_to :story,  counter_cache: true
   belongs_to :parent, class_name: 'Comment', foreign_key: 'parent_id', counter_cache: true
