@@ -5,4 +5,6 @@ class Story < ApplicationRecord
   validates :author_email, presence: true, email: true
 
   normalize_attributes :author, :location, :venue, :author_location, :date, :period
+
+  belongs_to :user
 end

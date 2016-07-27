@@ -3,4 +3,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
 
   validates :email, presence: true, email: true
+
+  has_many :stories
 end
