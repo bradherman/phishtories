@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0'
 # gem 'administrate', github: 'lyonsv/administrate', branch: 'rails-5'
 gem 'attribute_normalizer'
+gem 'devise'
 gem 'email_validator'
 gem 'hamlit', require: true
 gem 'jbuilder', '~> 2.5'
