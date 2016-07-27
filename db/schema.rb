@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160727052343) do
+ActiveRecord::Schema.define(version: 20160727052954) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20160727052343) do
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.index ["flaggable_type", "flaggable_id"], name: "index_flags_on_flaggable_type_and_flaggable_id", using: :btree
+    t.index ["user_id"], name: "index_flags_on_user_id", using: :btree
   end
 
   create_table "stories", force: :cascade do |t|

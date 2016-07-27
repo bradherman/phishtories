@@ -1,6 +1,6 @@
 class Flag < ApplicationRecord
-  validates :user_id, :voteable_id, :voteable_type, presence: true
+  validates :user_id, :flaggable_id, :flaggable_type, presence: true
 
   belongs_to :flaggable, polymorphic: true, counter_cache: true
-  belongs_to :users
+  belongs_to :user
 end
