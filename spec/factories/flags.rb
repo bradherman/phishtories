@@ -1,10 +1,10 @@
 FactoryGirl.define do
-  factory :comment_vote do
+  factory :comment_flag do
     comment
     user
   end
 
-  factory :story_vote do
+  factory :story_flag do
     story
     user
   end
