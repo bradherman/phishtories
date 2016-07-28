@@ -1,6 +1,6 @@
 # Phishtories
 
-[![Code Climate](https://codeclimate.com/github/bradherman/phishtories/badges/gpa.svg)](https://codeclimate.com/github/bradherman/phishtories) [![Build Status](https://semaphoreci.com/api/v1/bherms/phishtories/branches/master/badge.svg)](https://semaphoreci.com/bherms/phishtories) [![Build Status](https://semaphoreci.com/api/v1/bherms/phishtories/branches/master/badge.svg)](https://semaphoreci.com/bherms/phishtories)
+[![Build Status](https://semaphoreci.com/api/v1/bherms/phishtories/branches/master/badge.svg)](https://semaphoreci.com/bherms/phishtories) [![Test Coverage](https://codeclimate.com/github/bradherman/phishtories/badges/coverage.svg)](https://codeclimate.com/github/bradherman/phishtories/coverage) [![Code Climate](https://codeclimate.com/github/bradherman/phishtories/badges/gpa.svg)](https://codeclimate.com/github/bradherman/phishtories) [![Dependency Status](https://gemnasium.com/badges/github.com/bradherman/phishtories.svg)](https://gemnasium.com/github.com/bradherman/phishtories)
 
 Phishtories is a web app for the Phans to share their personal stories relating to the band and their music... This project is 100% open source and any proceeds will be donated to the Mockingbird Foundation.
 
