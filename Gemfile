@@ -24,6 +24,7 @@ gem 'uglifier', '>= 1.3.0'
 
 group :test do
   gem 'shoulda-matchers', '~> 3.1'
+  gem 'codeclimate-test-reporter', require: nil
 end
 
 group :development, :test do
