@@ -1,3 +1,19 @@
 // Place all the styles related to the Site controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background: #111;
+}
+.landing {
+  position: absolute;
+  top: 50%;
+  width:100%;
+  font-family: 'Sansita One', cursive;
+  font-size: 60px;
+  margin-top: -30px;
+  color: #ddd;
+}
+
+.landing span {
+  font-size: 10px;
+}
