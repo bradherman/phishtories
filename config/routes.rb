@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     resources :votes, only: [:create]
     resources :flags, only: [:create]
   end
+  get 'about',    to: 'site#about',   as: :about
+  get 'contact',  to: 'site#contact', as: :contact
   root to: 'site#index'
 end
